@@ -1,0 +1,67 @@
+/* Empty. Add your own CSS if you like */
+.bar.bar-light {
+  background-color: rgba(255,255,255,.66) !important; /* or transparent, or background:none */
+}
+.scroll-content {
+  overflow: visible !important;
+}
+
+
+/*****************
+STYLES FOR THE FILTER AND SEARCH // HOME PAGE
+*****************/
+#filter {
+	z-index: 10;
+}
+.display-none {
+	display: none;
+}
+.filter-show {
+	display: inline-block;
+}
+#search {
+	width: 100%;
+}
+
+
+
+/*****************
+STYLES FOR THE POSTS // HOME & DETAILS & MOST RECENT PAGE
+*****************/
+#image_div {
+	margin: 0px;
+}
+#post_image {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*****************
+STYLES FOR THE DETAILS
+*****************/
+/*div that contains username*/
+#details-list-item-container4 {
+	color:#000000;
+	text-align:center;	
+}
+/*username*/
+#details-list-item-container4 p {
+	margin-top:0px;
+}
+/*username background*/
+#details-markdown4 {
+	background-color: pink;
+}
+
+
+/*****************
+STYLES FOR THE MOST RECENT
+*****************/
+
+
+
+
+
+
+
