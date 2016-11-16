@@ -55,15 +55,26 @@ function ($scope, $stateParams, $firebaseObject) {
   	console.log($scope.data);
 
 }])
-   
-.controller('mOSTRECENTCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// details end
+
+
+.controller('mOSTRECENTCtrl', ['$scope', '$stateParams','$firebaseObject', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams) {
-
-
+function ($scope, $stateParams, $firebaseObject) {
+var ref = firebase.database().ref().child("mostrecent");
+    // download the data into a local object
+    var aux = $firebaseObject(ref);
+    console.log(aux);
+    $scope.mOSTRECENT = aux;
+    // putting a console.log here won't work, see below
+    console.log($scope.data);
+    
+    // ! scope is how you pass info to the template
 }])
-   
+//mostrecent end
+
+
 .controller('uPLOADPICCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
@@ -71,6 +82,8 @@ function ($scope, $stateParams) {
 
 
 }])
+// uploadpic end
+
    
 .controller('pOSTCtrl', ['$scope', '$stateParams','$firebaseObject', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
