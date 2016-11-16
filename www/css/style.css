@@ -1,4 +1,7 @@
-/* Empty. Add your own CSS if you like */
+/*****************
+GENERAL STYLING FOR ALL PAGES
+*****************/
+
 .bar.bar-light {
   background-color: rgba(255,255,255,.66) !important; /* or transparent, or background:none */
 }
@@ -6,58 +9,197 @@
   overflow: visible !important;
 }
 
-
 /*****************
 STYLES FOR THE FILTER AND SEARCH // HOME PAGE
 *****************/
+
 #filter {
 	z-index: 10;
 }
+
 .display-none {
 	display: none;
 }
+
 .filter-show {
 	display: inline-block;
 }
-#search {
-	width: 100%;
+
+.filter-tab {
+	border: 1px solid red;
+	background-color: red;
 }
 
+#filter .filter-button {
+	letter-spacing: 3px;
+	font-size: 12px;
+}
 
+#search {
+	width: 100%;
+	background-color: white;
+}
+
+.icon-colour {
+	color: #D80335;
+}
+
+.ion-search {
+	font-size: 24px;
+}
+
+.ion-funnel {
+	font-size: 20px;
+}
+
+.ion-android-favorite-outline, .ion-android-arrow-back {
+	font-size: 22px;
+}
+
+#home-card26 {
+	margin: 0;
+}
+
+.title {
+	letter-spacing: 3px;
+	font-size: 12px;
+}
+
+.namebox {
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
 
 /*****************
 STYLES FOR THE POSTS // HOME & DETAILS & MOST RECENT PAGE
 *****************/
+
 #image_div {
 	margin: 0px;
 }
+
 #post_image {
 	width: 100%;
 	height: 100%;
+	padding: 0;
+	margin: 0;
 }
-
 
 /*****************
 STYLES FOR THE DETAILS
 *****************/
+
+.ion-arrow-left-c {
+	color: #D80335;
+}
+
 /*div that contains username*/
 #details-list-item-container4 {
-	color:#000000;
-	text-align:center;	
-}
-/*username*/
-#details-list-item-container4 p {
-	margin-top:0px;
-}
-/*username background*/
-#details-markdown4 {
-	background-color: pink;
+	color: #000000;
+	text-align: center;
 }
 
+#details-list-item-container4 p {
+	margin-top: 0px;
+}
+
+.item .username {
+	color: #D80335;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.icon {
+	font-size: 30px;
+}
+
+.row ion-item {
+	border: 0px solid red;
+	margin: 10px;
+}
+
+ion-view ion-content .button {
+	background-color: #D80335;;
+	border-radius: 0;
+	width: 100%;
+	color: white;
+}
 
 /*****************
-STYLES FOR THE MOST RECENT
+STYLES FOR IMAGE SELECTION
 *****************/
+
+.tab-button {
+	letter-spacing: 3px;
+	background-color: white;
+	height: 44px;
+	top: 20px;
+}
+
+.tabs { 
+	top: 0; 
+}
+
+.camera-button {
+	width: 80px;
+	height: 80px;
+	background-color: #D80335;
+	border: 2px solid #ff003B;
+	opacity: 0.3;
+	border-radius: 50%;
+	position: fixed;
+	top: 80vh;
+	left: 40vw;
+}
+
+/*****************
+STYLES FOR POST
+*****************/
+
+/*temporary nodes to indicate how the image recognition would appear*/
+.circle {
+	width: 20px;
+	height: 20px;
+	background-color: #D80335;
+	border: 1px solid #ff003B;
+	border-radius: 50%;
+	position: fixed;
+	display: block;
+}
+
+@keyframes showNav {
+  from {opacity: 0;}
+  to {opacity: 0.8;}
+}
+
+.node1 {
+	left: 180px;
+	top: 240px;
+	 animation: showNav 1000ms ease-in-out both;
+}
+
+.node2 {
+	left: 100px;
+	top: 290px;	
+	 animation: showNav 1400ms ease-in-out both;
+}
+
+.node3 {
+	left: 230px;
+	top: 440px;	
+	 animation: showNav 1800ms ease-in-out both;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

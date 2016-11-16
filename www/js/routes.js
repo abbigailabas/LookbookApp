@@ -22,26 +22,37 @@ angular.module('app.routes', [])
     controller: 'detailsCtrl'
   })
 
-  .state('mOSTRECENT', {
+  .state('mostrecent', {
     url: '/page3',
-    templateUrl: 'templates/mOSTRECENT.html',
-    controller: 'mOSTRECENTCtrl'
+    templateUrl: 'templates/mostrecent.html',
+    controller: 'mostrecentCtrl'
   })
 
-  .state('uPLOADPIC', {
+  .state('uploadpic', {
     url: '/page4',
-    templateUrl: 'templates/uPLOADPIC.html',
-    controller: 'uPLOADPICCtrl'
+    templateUrl: 'templates/uploadpic.html',
+    controller: 'uploadpicCtrl'
   })
 
-  .state('pOST', {
+  .state('post', {
     url: '/page5',
-    templateUrl: 'templates/pOST.html',
-    controller: 'pOSTCtrl'
+    templateUrl: 'templates/post.html',
+    controller: 'postCtrl'
   })
+
+    .state('menu', {
+    url: '/page6',
+    templateUrl: 'templates/menu.html',
+    controller: 'menuCtrl'
+  })
+
 
 $urlRouterProvider.otherwise('/home')
 
-  
-
 });
+
+
+
+
+
+  

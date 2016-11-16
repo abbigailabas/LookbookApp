@@ -34,14 +34,9 @@ function ($scope, $stateParams,$firebaseObject) {
         }
     }
 
-
-
 }]) 
 // home end
 
-
-
-   
 .controller('detailsCtrl', ['$scope', '$stateParams','$firebaseObject', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
@@ -56,7 +51,7 @@ function ($scope, $stateParams, $firebaseObject) {
 
 }])
    
-.controller('mOSTRECENTCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('mostrecentCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
@@ -64,15 +59,14 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('uPLOADPICCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('uploadpicCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
-
 }])
    
-.controller('pOSTCtrl', ['$scope', '$stateParams','$firebaseObject', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('postCtrl', ['$scope', '$stateParams','$firebaseObject', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams, $firebaseObject) {
@@ -86,3 +80,10 @@ var ref = firebase.database().ref().child("users");
   syncObject.$bindTo($scope, "data");
 }])
  
+.controller('menuCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+function ($scope, $stateParams) {
+
+
+}])
