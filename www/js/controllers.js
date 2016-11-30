@@ -50,15 +50,11 @@ function ($scope, $stateParams, $firebaseObject) {
   	console.log($scope.data);
 
 }])
-<<<<<<< HEAD
 // details end
 
 
-.controller('mOSTRECENTCtrl', ['$scope', '$stateParams','$firebaseObject', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-=======
    
-.controller('mostrecentCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
->>>>>>> 7fca7f413fa86e67d74921eddd833b7362d3244d
+.controller('mostrecentCtrl', ['$scope', '$stateParams','$firebaseObject', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams, $firebaseObject) {
@@ -74,14 +70,8 @@ var ref = firebase.database().ref().child("mostrecent");
 }])
 //mostrecent end
 
-
-<<<<<<< HEAD
-.controller('uPLOADPICCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-=======
-}])
    
 .controller('uploadpicCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
->>>>>>> 7fca7f413fa86e67d74921eddd833b7362d3244d
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {

@@ -17,30 +17,39 @@
            <div class="circle node3"></div>
         
         <form id="post-form4" class="list">
+
             <label class="item item-input" id="post-input3">
                 <input ng-model="data.user.name" type="text" placeholder="Add a description">
             </label>
+
             <label class="item item-input" id="post-input4">
                 <input type="text" placeholder="Add some tags">
             </label>
+            
             <label class="item item-input" id="post-input6">
                 <input type="text" placeholder="Add a location">
             </label>
+
         </form>
+
         <ion-list id="post-list6">
-            <ion-item id="post-list-item47">SHARE</ion-item>
+            <ion-item id="post-list-item47" class="text-center">SHARE</ion-item>
         </ion-list>
 
         <div class="row" id="post-list7">
+
              <ion-item class="col text-center" id="post-list-item44" onclick="window.open('http://fb.com', '_system', 'location=yes'); return false;">
                 <i class="icon ion-social-facebook-outline"></i>
             </ion-item>
-            <ion-item class="col text-center" id="post-list-item45">
+
+            <ion-item class="col text-center" id="post-list-item45" onclick="window.open('http://twitter.com', '_system', 'location=yes'); return false;">
                 <i class="icon ion-social-twitter-outline"></i>
             </ion-item>
-            <ion-item class="col text-center" id="post-list-item46">
+
+            <ion-item class="col text-center" id="post-list-item46" onclick="window.open('http://instagram.com', '_system', 'location=yes'); return false;">
                 <i class="icon ion-social-instagram-outline"></i>
             </ion-item>
+
         </div>
 
         <button id="post-button14" class="button" ui-sref="home">POST</button>
