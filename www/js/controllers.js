@@ -62,7 +62,7 @@ var ref = firebase.database().ref().child("mostrecent");
     // download the data into a local object
     var aux = $firebaseObject(ref);
     console.log(aux);
-    $scope.mostrecent = aux;
+    $scope.mostrecents = aux; // you had it like $scope.mostrecent but in your firebase firebase.database().ref().child("mostrecent"); returns an array, so i just added the 's' plural so it represents like an array or a collection of mostresent items that step 1
     // putting a console.log here won't work, see below
     console.log($scope.data);
 
