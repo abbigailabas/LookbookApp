@@ -101,3 +101,19 @@ function ($scope, $stateParams) {
 
 
 }])
+
+// cloudsight api stuff
+.controller('CloudCtrl', function($scope, CloudService){
+	CloudService.request(params).then(function(response){
+		// Response from server
+	});
+});
+
+angular.module('starter.services', [])
+.factory('CloudService', function($http){
+  return{
+    request: function(message){
+        return $http({ url:url ,method:"POST",params:message});
+    }
+  }
+});
