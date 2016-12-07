@@ -10,8 +10,11 @@
 
     <ion-content padding="true" class="has-header">
 
-
-            <!-- Step 2 was get the mostresents with S cuz its an array and add a ng-repeat cuz its an array right, ng-repeat="(key, mostrecent) in mostrecents"  and user the same template for the loop with mostrecent as a variable and reach the properties in the object picture and username   -->
+            <!-- step 1 in controllers.js -->
+            <!-- Step 2 was get the mostresents with S cuz its an array and add
+            //an ng-repeat cuz its an array right, ng-repeat="(key, mostrecent) in mostrecents"
+            //and user the same template for the loop with mostrecent as a variable and reach
+            //the properties in the object picture and username   -->
         <div class="list card" ng-repeat="(key, mostrecent) in mostrecents"  id="mostrecent-card{{key}}">
 
             <div id="image_div">

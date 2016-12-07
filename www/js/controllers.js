@@ -62,8 +62,13 @@ var ref = firebase.database().ref().child("mostrecent");
     // download the data into a local object
     var aux = $firebaseObject(ref);
     console.log(aux);
-    $scope.mostrecents = aux; // you had it like $scope.mostrecent but in your firebase firebase.database().ref().child("mostrecent"); returns an array, so i just added the 's' plural so it represents like an array or a collection of mostresent items that step 1
-    // putting a console.log here won't work, see below
+    $scope.mostrecents = aux;
+	//^^ you had it like $scope.mostrecent but in your firebase firebase.database().ref().child("mostrecent");
+	//returns an array, so i just added the 's' plural so it represents like an array or a collection of
+	//mostresent items that step 1
+	//step2 in mostresent.html
+	
+	// putting a console.log here won't work, see below
     console.log($scope.data);
 
     // ! scope is how you pass info to the template
@@ -113,7 +118,7 @@ angular.module('starter.services', [])
 .factory('CloudService', function($http){
   return{
     request: function(message){
-        return $http({ url:url ,method:"POST",params:message});
+        return $http({ url:url ,method:"GET",params:message});
     }
   }
 });
