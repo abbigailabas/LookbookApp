@@ -5,12 +5,24 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services','firebase'])
+angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services','firebase', 'app-constants'])
 
 
 
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, firebaseApiKey, firebaseSenderId) {
+
+    // Initialize the Firebase SD
+    // Initialize Firebase
+    var config = {
+      apiKey: firebaseApiKey,
+      authDomain: "lookbook-eaea7.firebaseapp.com",
+      databaseURL: "https://lookbook-eaea7.firebaseio.com",
+      storageBucket: "lookbook-eaea7.appspot.com",
+      messagingSenderId: firebaseSenderId
+    };
+    firebase.initializeApp(config);
+
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -24,4 +36,3 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
         }
     });
 })
-
