@@ -6,13 +6,19 @@
         </ion-slide-page>
 
         <ion-slide-page>
+        
             <div class="bar bar-light bar-header">
-                <button class="button" id="funnel" ng-click="showFilter()"><i class="icon-left icon-colour ion-funnel"></i></button>
+                <button class="button" id="funnel" ng-click="showFilter()">
+                    <i class="icon-left icon-colour ion-funnel"></i>
+                </button>
                 <h1 class="title">lookbook</h1>
-                <button class="button" ng-click="showSearch()"><i class="icon-right icon-colour ion-search"></i></button>
+                <button class="button" ng-click="showSearch()">
+                    <i class="icon-right icon-colour ion-search"></i>
+                </button>
             </div>
             
             <ion-content padding="false" class="has-header">
+
                 <div id="filter" ng-class="filter">
                     <ion-item class="text-center filter-button" id="" ui-sref="mostrecent">MOST RECENT</ion-item>
                     <ion-item class="text-center filter-button" id="" ui-sref="mostrecent">MOST LIKED</ion-item>
@@ -20,7 +26,7 @@
                 </div>
 
                 <div id="search" ng-class="search" class="padding">
-                        <input id="search" type="search" placeholder="Search for a user, brand, clothing type, or location" class="item-input-wrapper textbox-search">
+                    <input id="search" type="search" placeholder="Search for a user, brand, clothing type, or location" class="item-input-wrapper textbox-search">
                 </div>
                 
                 <!-- keys=the number in the array/ post the object inside the array -->
@@ -29,8 +35,10 @@
                         <img id="post_image" src="{{ post.picture }}" alt="img/kid.jpg">
                         <ion-item class="text-center namebox" id="home-list-item27">{{post.username}}</ion-item>
                     </div>
-                </div> <!-- key end -->
+                </div>
+
             </ion-content>
+
         </ion-slide-page>
 
         <ion-slide-page>
