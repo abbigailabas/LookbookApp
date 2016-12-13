@@ -134,16 +134,14 @@ var ref = firebase.database().ref().child("users");
 		}, 30000);
 
 }	//note: we cant check all five at the same time. its too many. so just checking the top 3 items
-	// cheking scarf
-	// CloudSight.request({image_request:{remote_image_url: 'https://firebasestorage.googleapis.com/v0/b/lookbook-eaea7.appspot.com/o/scarf.png?alt=media&token=9a13cb2c-ca5d-431d-bba9-a0c7fd861de6'}}).then(sendImageResponse);
-	// cheking jacket
-	CloudSight.request({image_request:{remote_image_url: 'https://firebasestorage.googleapis.com/v0/b/lookbook-eaea7.appspot.com/o/jacket.png?alt=media&token=b1734134-ef02-4f28-9a9f-e0db1d357af8'}}).then(sendImageResponse);
-	// cheking pants
-	CloudSight.request({image_request:{remote_image_url: 'https://firebasestorage.googleapis.com/v0/b/lookbook-eaea7.appspot.com/o/pants.png?alt=media&token=c5de5ebf-faac-43cb-9ca6-476e96c4a990'}}).then(sendImageResponse);
-	// cheking purse
-	CloudSight.request({image_request:{remote_image_url: 'https://firebasestorage.googleapis.com/v0/b/lookbook-eaea7.appspot.com/o/purse.png?alt=media&token=57a83c8c-18d1-47c9-aee4-c249788eee5f'}}).then(sendImageResponse);
+	//note: it doesnt matter what order you code the images in, it will check whichever one it wants first
 	// cheking shoes
-	// CloudSight.request({image_request:{remote_image_url: 'https://firebasestorage.googleapis.com/v0/b/lookbook-eaea7.appspot.com/o/shoes.png?alt=media&token=629a7caf-b7d7-4441-b162-dc42994622b0'}}).then(sendImageResponse);
+	CloudSight.request({image_request:{remote_image_url: 'https://firebasestorage.googleapis.com/v0/b/lookbook-eaea7.appspot.com/o/shoes.jpg?alt=media&token=549699c7-8b36-43e9-8e3b-3d1eb124c997'}}).then(sendImageResponse);
+	// cheking pants
+	CloudSight.request({image_request:{remote_image_url: 'https://firebasestorage.googleapis.com/v0/b/lookbook-eaea7.appspot.com/o/pants.jpg?alt=media&token=454f6a27-7881-4aaf-af10-e5cd646c2052'}}).then(sendImageResponse);
+	// cheking jacket
+	CloudSight.request({image_request:{remote_image_url: 'https://firebasestorage.googleapis.com/v0/b/lookbook-eaea7.appspot.com/o/jacket.jpg?alt=media&token=e9688b66-bd9a-4984-8415-cc2ea5eb9052'}}).then(sendImageResponse);
+
 
 
 }]) // post end
