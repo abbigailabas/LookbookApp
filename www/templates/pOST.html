@@ -11,10 +11,21 @@
             <!-- 2 GET an image_response this is the image that has been read.
             we need the info to come up on this image -->
             <!--temporary image and nodes-->
+
             <img src="img/outfit.jpg" alt="" style="width:100%; height:inherit;">
             <div class="circle node1"></div>
             <div class="circle node2"></div>
             <div class="circle node3"></div>
+
+
+        <div class="nodesContainer">
+           <img src="img/outfit.png" alt="" style="width:100%; height:inherit;">
+           <div id="moveNode" class="circle node1"></div>
+           <div id="nodeTwo" on-touch="getNodePosition($event)" on-drag="moveNode($event)" class="circle"></div>
+           <div class="circle node3"></div>
+        </div>
+
+
 
         <form id="post-form4" class="list">
 
@@ -56,5 +67,7 @@
         <button id="post-button14" class="button" ui-sref="home">POST</button>
 
     </ion-content>
+
+
 
 </ion-view>

@@ -81,6 +81,7 @@ var ref = firebase.database().ref().child("mostrecent");
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
+
 }]) // uploadpic end
 
 
@@ -89,6 +90,7 @@ function ($scope, $stateParams) {
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams, $firebaseObject, CloudSight) {
+
 //$scope.ss  = "fff";
 $scope.g  =''; //variable used to pass the image response from Cloudsight to where ever we want in LookBook
 var ref = firebase.database().ref().child("users");
@@ -98,6 +100,39 @@ var ref = firebase.database().ref().child("users");
   // synchronize the object with a three-way data binding
   // click on `index.html` above to see it used in the DOM!
   syncObject.$bindTo($scope, "data");
+
+
+
+
+  var x_pos = 0;
+  var y_pos = 0;
+
+
+
+
+
+  $scope.getNodePosition = function(event) {
+    var node = document.getElementById('nodeTwo');
+    x_pos = node.offsetLeft;
+    y_pos = node.offsetTop;
+  }    
+
+
+
+  $scope.moveNode = function(event) {
+
+    
+    
+    console.log(x);
+   
+    // var node = document.getElementById('nodeTwo');
+    // node.style.position = 'absolute';
+    // node.style.left = (currenttouchxposition - x_pos) + 'px';
+    // node.style.top = (currenttouchyposition - y_pos) + 'px';
+
+  }    
+
+
   // this handles the response when you upload an image
   // cheking status for 200
   // when the api responds with info this is the code that runs
@@ -145,6 +180,7 @@ var ref = firebase.database().ref().child("users");
 
 
 }]) // post end
+
 
 
 .controller('menuCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
