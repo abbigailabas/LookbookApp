@@ -168,27 +168,33 @@ STYLES FOR POST
 	display: block;
 }
 
-@keyframes showNav {
+/*@keyframes showNav {
   from {opacity: 0;}
   to {opacity: 0.8;}
-}
+}*/
 
 .node1 {
-	left: 180px;
-	top: 240px;
-	 animation: showNav 1000ms ease-in-out both;
+	left: 20px;
+	top: 400px;
+	 /*animation: showNav 1000ms ease-in-out both;*/
 }
 
-.node2 {
-	left: 100px;
-	top: 290px;	
-	 animation: showNav 1400ms ease-in-out both;
+#nodeTwo {
+	left: 20px;
+	top: 450px;	
+	 /*animation: showNav 1400ms ease-in-out both;*/
 }
 
 .node3 {
-	left: 230px;
-	top: 440px;	
-	 animation: showNav 1800ms ease-in-out both;
+	left: 20px;
+	top: 500px;	
+	 /*animation: showNav 1800ms ease-in-out both;*/
+}
+
+.nodesContainer {
+	height: 600px;
+	width: 100%;
+	overflow: auto;
 }
 
 

@@ -57,6 +57,7 @@ function ($scope, $stateParams, $firebaseObject) {
 function ($scope, $stateParams) {
 
 
+
 }])
    
 .controller('uploadpicCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
@@ -66,10 +67,10 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('postCtrl', ['$scope', '$stateParams','$firebaseObject', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('postCtrl', ['$scope', '$stateParams','$firebaseObject', '$ionicPosition', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams, $firebaseObject) {
+function ($scope, $stateParams, $firebaseObject, $ionicPosition) {
 //$scope.ss  = "fff";
 var ref = firebase.database().ref().child("users");
   // download the data into a local object
@@ -78,6 +79,44 @@ var ref = firebase.database().ref().child("users");
   // synchronize the object with a three-way data binding
   // click on `index.html` above to see it used in the DOM!
   syncObject.$bindTo($scope, "data");
+
+
+  
+
+
+
+  var x_pos = 0;
+  var y_pos = 0;
+
+
+
+
+
+  $scope.getNodePosition = function(event) {
+    var node = document.getElementById('nodeTwo');
+    x_pos = node.offsetLeft;
+    y_pos = node.offsetTop;
+  }    
+
+
+
+  $scope.moveNode = function(event) {
+
+    var x = event.targetTouches[0].pageX;
+    
+    console.log(x);
+   
+    // var node = document.getElementById('nodeTwo');
+    // node.style.position = 'absolute';
+    // node.style.left = (currenttouchxposition - x_pos) + 'px';
+    // node.style.top = (currenttouchyposition - y_pos) + 'px';
+
+  }    
+
+
+
+
+
 }])
  
 .controller('menuCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
