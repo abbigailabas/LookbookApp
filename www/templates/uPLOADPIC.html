@@ -1,22 +1,17 @@
 <ion-view title="UPLOAD PIC" id="page4" >
     <ion-content scroll="false" padding="false" class="">
 
-        <ion-tabs class="tabs tab-bar tabs-striped">
+        <ion-tabs class="tabs-striped">
             <ion-tab class="tab-button button-block" title="CAMERA" >
-                <!-- Tab 1 content -->
+                <div style="margin: 0px;">
+                    <img src="img/outfit.jpg" alt="" style="margin-top: 45px">
+                </div>
+                <button id="uploadpic-button13" class="camera-button" ui-sref="post"></button>
             </ion-tab>
             <ion-tab class="tab-button button-block" title="GALLERY">
                 <!-- Tab 2 content -->
             </ion-tab>
         </ion-tabs>
-
-        <!-- 1 POST an image_request on this page? because this is where we're posting an image-->
-        <!-- this is the image that needs to be recognized -->
-        <div style="margin: 0px;">
-            <img src="img/outfit.jpg" alt="" style="height:inherit;">
-        </div>
-
-        <button id="uploadpic-button13" class="camera-button" ui-sref="post"></button>
 
     </ion-content>
 </ion-view>
