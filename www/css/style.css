@@ -127,6 +127,37 @@ ion-view ion-content .button {
 }
 
 /*****************
+STYLES FOR MENU
+*****************/
+
+.track-wrapper {
+	margin-top: 50px;
+}
+
+.info-window {
+	width: 80%;
+	height: 140px;
+	margin: 20px auto;
+	border: 1px solid #DDDDDD;
+}
+
+.menu-header {
+	text-align: center;
+	background-color: #DDDDDD;
+	color: white;
+	padding: 5px 0;
+	letter-spacing: 3px;
+	font-size: 12px;
+}
+
+.entry {
+	font-size: 40px;
+	text-align: center;
+	margin-top: 40px;
+	color: #DDDDDD;
+}
+
+/*****************
 STYLES FOR IMAGE SELECTION
 *****************/
 
@@ -168,31 +199,31 @@ STYLES FOR POST
 	display: block;
 }
 
-/*@keyframes showNav {
+@keyframes showNav {
   from {opacity: 0;}
   to {opacity: 0.8;}
-}*/
-
-.node1 {
-	left: 20px;
-	top: 400px;
-	 /*animation: showNav 1000ms ease-in-out both;*/
 }
 
-#nodeTwo {
-	left: 20px;
-	top: 450px;	
-	 /*animation: showNav 1400ms ease-in-out both;*/
+.node1 {
+	left: 145px;
+	top: 200px;
+	 animation: showNav 1000ms ease-in-out both;
+}
+
+.node2 {
+	left: 160px;
+	top: 380px;	
+	 animation: showNav 2000ms ease-in-out both;
 }
 
 .node3 {
-	left: 20px;
-	top: 500px;	
-	 /*animation: showNav 1800ms ease-in-out both;*/
+	left: 230px;
+	top: 450px;	
+	 animation: showNav 3000ms ease-in-out both;
 }
 
 .nodesContainer {
-	height: 600px;
+	height: 100%;
 	width: 100%;
 	overflow: auto;
 }
