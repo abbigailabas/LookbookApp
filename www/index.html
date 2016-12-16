@@ -19,26 +19,26 @@
         <link href="lib/ionic/css/ionic.css" rel="stylesheet">
 
 
-    <style type="text/css">
-        .platform-ios .manual-ios-statusbar-padding{
-        padding-top:20px;
-    }
-    .manual-remove-top-padding{
-        padding-top:0px;
-    }
-    .manual-remove-top-padding .scroll{
-        padding-top:0px !important;
-    }
-    ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
-        margin-left:-10px;
-        margin-right:-10px;
-    }
-    ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
-        border-radius:0px;
-        border-left:0px;
-        border-right: 0px;
-    }
-    </style>
+        <style type="text/css">
+            .platform-ios .manual-ios-statusbar-padding{
+            padding-top:20px;
+        }
+        .manual-remove-top-padding{
+            padding-top:0px;
+        }
+        .manual-remove-top-padding .scroll{
+            padding-top:0px !important;
+        }
+        ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+            margin-left:-10px;
+            margin-right:-10px;
+        }
+        ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+            border-radius:0px;
+            border-left:0px;
+            border-right: 0px;
+        }
+        </style>
 
 
         <!-- Firebase -->
@@ -63,6 +63,11 @@
         <div>
             <div>
                 <ion-nav-view></ion-nav-view>
+                <!--
+                note: right now there are errors for the favicon and that it cannot find the image
+                those are okay. we dont have a favicon and it can find the image bacause it cant
+                read it from firebase but it still shows up
+                -->
             </div>
         </div>
     </body>
